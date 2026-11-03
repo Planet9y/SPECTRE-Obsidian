@@ -29,6 +29,45 @@ Explore a visual representation of your computer's network activity.
 - Clickable nodes with connection details
 - Process identification and socket information
 
+## 📸 Screenshots
+
+### Network Command Center
+Explore your network through SPECTRE's interactive connection constellation.
+
+![SPECTRE Network Overview](overview.png)
+
+### Connection Intelligence
+Monitor active TCP/UDP connections, processes, and remote endpoints.
+
+![Connection Intelligence](connections.png)
+
+### Process Monitor
+Inspect running processes and their memory usage.
+
+![Process Monitor](processes.png)
+
+### Security Insights
+View automated observations about your system's activity.
+
+![Security Insights](security_insights.png)
+
+### Listening Ports
+Identify local services accepting incoming connections.
+
+![Listening Ports](listening_ports.png)
+
+### Connection History
+Explore locally recorded connection events.
+
+![Connection History](event_history.png)
+
+### Network Diagnostics
+Run ping tests and DNS lookups.
+
+![Network Diagnostics](diagnostics.png)
+
+---
+
 ### Real-Time System Monitoring
 
 Monitor your computer's performance through live telemetry.
