@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: spectre-network-intelligence
+Version: 6.0.0a1
+Summary: Local-first Windows system and network intelligence dashboard
+Author: GHOST contributors
+License-Expression: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psutil<9,>=5.9
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: pyinstaller>=6; extra == "dev"
+Dynamic: license-file
+
+# SPECTRE // OBSIDIAN
+
+A local-first, read-only system and network intelligence dashboard for Windows.
+
+**Start here:** [OBSIDIAN-README.md](OBSIDIAN-README.md)
+
+The **Obsidian** interface is a new responsive, browser-rendered dashboard, backed by the original Python monitoring engine. The previous PySide6 frontend is retained in `src/ghost/app.py` but is no longer the default launcher.
+
+### Quick start (Windows)
+
+Run `scripts\run_obsidian.bat` from the extracted project. To build an executable, run `scripts\build_windows.bat`, then launch `dist\SPECTRE-OBSIDIAN.exe`.
+
+The application runs a local HTTP server on `127.0.0.1`, opens the dashboard in your browser, and stops when you close the console. No cloud account or external assets required.
+
+### Features
+
+CPU, RAM, disk and NVIDIA GPU telemetry; network traffic history; live connection inventory; process and listener tables; live security advisories; local SQLite history; CSV export; DNS and ping diagnostics. Connection filters and sorting remain in place during live updates.
+
+**Security:** Observations are not malware verdicts. SPECTRE does not scan, block, or modify network connections.

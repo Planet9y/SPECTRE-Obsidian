@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spectre-network-intelligence"
+version = "6.0.0a1"
+description = "Local-first Windows system and network intelligence dashboard"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "GHOST contributors"}]
+dependencies = ["psutil>=5.9,<9"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pyinstaller>=6"]
+
+[project.scripts]
+spectre = "ghost.webapp:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
